@@ -1,0 +1,13 @@
+<launch>
+  <arg name="object_species_file" default="$(find fusion_lib)/data/water.names"/>
+  <arg name="rt_engine_file" default="$(find fusion_lib)/model/yolov5s.engine"/>
+  <arg name="camera_info_src" default="$(find fusion_lib)/config/cam+velodyne.yaml"/>
+  
+  <node name="fusion_node" pkg="fusion_lib" type="fusion_lib_fusion_node" output="screen" >
+    <param name="names_file" type="str" value="$(arg object_species_file)"/>
+    <param name="engine_file" type="str" value="$(arg rt_engine_file)"/>
+    <param name="camera_info_dir" type="str" value="$(arg camera_info_src)"/>
+    <rosparam command="load" file="$(arg camera_info_src)"/>
+  </node>
+</launch>
+

@@ -1,0 +1,21 @@
+%YAML:1.0
+---
+remove_points_farto: 55.
+remove_points_closeto: 1.
+clip_min_height: -2.5000000000000000e+00
+clip_max_height: 2.6000000000000001e+00
+ground_search_radius: 1.
+in_floor_max_height: 4.0000000000000002e-01
+in_floor_max_angle: 1.4999999999999999e-01
+cluster_size_min: 7
+cluster_size_max: 2500
+clustering_distance: 5.0000000000000000e-01
+use_multiple_thres: 0
+clustering_ranges: [ 15., 30. ]
+cluster_sizes_min: [ 70, 20, 8 ]
+cluster_sizes_max: [ 2500, 700, 500 ]
+clustering_distances: [ 5.0000000000000000e-01, 1.1000000000000001e+00,
+    1.6000000000000001e+00 ]
+cluster_merge_threshold: 5.
+pose_estimation: 1
+remove_ground: 0
